@@ -105,7 +105,7 @@ body{
 
     text-decoration: none;
 
-    width: 300px;
+    width: 350px;
 }
 .button.is-round {
     border-radius: 10px;
@@ -114,8 +114,13 @@ body{
     font-family: 'cs_chatthairegular', sans-serif;
     
 }
-
+div.center{
+    align-items: center;
+}
 .is-orange {
     background-color: #ef8d22 !important;
     color: white !important;
+}
+.deplay-none{
+   display:none
 }
