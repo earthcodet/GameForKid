@@ -1,0 +1,121 @@
+
+body{
+    background-image: url("../QuestionBackground.jpg");
+    background-size: 100%
+}
+@font-face {
+    font-family: 'cs_chatthairegular';
+    src: url('cschatthai-webfont.woff2') format('woff2'),
+         url('cschatthai-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.columns {
+    display: flex;
+    align-items: center;
+}
+
+.column {
+    width: 100%;
+}
+
+.column.is-1 {
+    flex: none;
+    width: 12.5%;
+}
+
+.column.is-2 {
+    flex: none;
+    width: 25%;
+}
+
+.column.is-3 {
+    flex: none;
+    width: 37.5%;
+}
+
+.column.is-4 {
+    flex: none;
+    width: 50%;
+}
+
+.column.is-5 {
+    flex: none;
+    width: 62.5%;
+}
+
+.column.is-6 {
+    flex: none;
+    width: 75%;
+}
+
+.column.is-7 {
+    flex: none;
+    width: 87.5%;
+}
+
+.column.is-8 {
+    flex: none;
+    width: 100%;
+}
+.font.is-1{
+    color : white;
+    font-size: 30px;
+}
+.font.is-2{
+    color : white;
+    font-size: 35px;
+}
+.font.is-3{
+    color : white;
+    font-size: 40px;
+}
+.font.is-4{
+    color : white;
+    font-size: 60px;
+}
+.borderBox{
+    border-style: solid;
+    border-color:white;
+    border-width:1px;
+}
+.box{
+    height: 40px;
+    width: 40px;
+    text-align:center;
+}
+.question{
+    padding:3%
+}
+.button {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 5%;
+    margin: .3rem;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid gray;
+    background-color: white;
+    
+    font: 400 40px Arial;
+    font-family: 'cs_chatthairegular', sans-serif;
+    text-align: center;
+    text-overflow: ellipsis;
+
+    text-decoration: none;
+
+    width: 300px;
+}
+.button.is-round {
+    border-radius: 10px;
+}
+.fontStyle{
+    font-family: 'cs_chatthairegular', sans-serif;
+    
+}
+
+.is-orange {
+    background-color: #ef8d22 !important;
+    color: white !important;
+}
