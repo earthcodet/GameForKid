@@ -1,7 +1,9 @@
 
 body{
     background-image: url("../QuestionBackground.jpg");
-    background-size: 100%
+    background-size: 100%;
+    margin:auto;
+    padding:0;
 }
 @font-face {
     font-family: 'cs_chatthairegular';
@@ -69,11 +71,15 @@ body{
 }
 .font.is-3{
     color : white;
-    font-size: 40px;
+    font-size: 60px;
 }
 .font.is-4{
     color : white;
-    font-size: 60px;
+    font-size: 70px;
+}
+.font.is-5{
+    color : white;
+    font-size: 1500px;
 }
 .borderBox{
     border-style: solid;
@@ -86,12 +92,11 @@ body{
     text-align:center;
 }
 .question{
-    padding:3%
+    padding: 50px
 }
 .button {
     display: inline-block;
     box-sizing: border-box;
-    padding: 5%;
     margin: .3rem;
     overflow: hidden;
     cursor: pointer;
@@ -104,8 +109,16 @@ body{
     text-overflow: ellipsis;
 
     text-decoration: none;
-
-    width: 350px;
+    height: 150px;
+    width: 320px;
+}
+.button.is-1{
+    height: 150px;
+    width: 320px;
+}
+.button.is-2{
+    height: 80px;
+    width: 200px;
 }
 .button.is-round {
     border-radius: 10px;

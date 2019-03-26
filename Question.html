@@ -11,67 +11,141 @@
 </head>
 
 <body>
-    <div class="columns">
-        <div class="column is-2" style="padding:15px">
-            <div class="columns">
-                <div class="column is-1">
-                    <img src="./resource/clock.png" alt="Smiley face" height="42" width="42">
+
+    <!---mainGame-->
+    <div id="mainGame">
+        <div class="columns">
+            <div class="column is-2" style="padding:15px">
+                <div class="columns">
+                    <div class="column is-1">
+                        <img src="./resource/clock.png" alt="Smiley face" height="42" width="42">
+                    </div>
+                    <div class="column is-3 box borderBox">
+                        <label id="timeGame" class="font is-2"> 05:00 </label>
+                    </div>
                 </div>
-                <div class="column is-3 box borderBox">
-                    <label id="timeGame" class="font is-2"> 05:00 </label>
+                <div class="columns">
+                    <div class="column is-1">
+                        <img src="./resource/star.png" alt="Smiley face" height="42" width="42">
+                    </div>
+                    <div class="column is-3 box borderBox">
+                        <label id="GameScore" class="font is-2"> 0 </label>
+                    </div>
                 </div>
             </div>
-            <div class="columns">
-                <div class="column is-1">
-                    <img src="./resource/star.png" alt="Smiley face" height="42" width="42">
-                </div>
-                <div class="column is-3 box borderBox">
-                    <label id="GameScore" class="font is-2"> 0 </label>
+            <div class="column is-4 fontStyle">
+                <center>
+                    <lable class="font is-4"> โจทย์ปัญหาพาคิด</lable>
+                </center>
+                <!---style="margin-left: 23%"-->
+            </div>
+            <div class="column is-1" style="margin-left: 11%">
+                <div class="columns">
+                    <div class="column is-2 box borderBox">
+                        <img src="./resource/heart.png" alt="Smiley face" height="42" width="42">
+                    </div>
+                    <div class="column is-2 box borderBox">
+                        <label id="GameHeart" class="font is-2"> 3 </label>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="column is-4 fontStyle">
-            <lable style="margin-left: 27%" class="font is-4"> โจทย์ปัญหาพาคิด</lable>
+        <div class="columns" style="margin-top:2%">
+            <div class="column fontStyle question center">
+                <center>
+                    <img id="imgGame" class="deplay-none" src="./resource/04.PNG" alt="Smiley face" height="360"
+                        width="650"><br><br><br>
+                    <lable id="proposition" class="font is-3"> </lable>
+                </center>
+            </div>
         </div>
-        <div class="column is-1" style="margin-left: 11%">
-            <div class="columns">
-                <div class="column is-2 box borderBox">
-                    <img src="./resource/heart.png" alt="Smiley face" height="42" width="42">
-                </div>
-                <div class="column is-2 box borderBox">
-                    <label id="GameHeart" class="font is-2"> 3 </label>
-                </div>
+        <div class="columns fontStyle" style="margin-top:3%">
+            <div class="column is-4">
+                <center>
+                    <button id="choice1" class="button is-round is-orange" value="choice1"
+                        onclick="selectAns(this.value)">
+                    </button><br><br><br><br><br><br>
+                    <button id="choice2" class="button is-round is-orange" value="choice2"
+                        onclick="selectAns(this.value)">
+                    </button>
+                </center>
+            </div>
+            <div class="column is-4">
+                <center>
+                    <button id="choice3" class="button is-1 is-round is-orange" value="choice3"
+                        onclick="selectAns(this.value)">
+                    </button><br><br><br><br><br><br>
+                    <button id="choice4" class="button is-1 is-round is-orange" value="choice4"
+                        onclick="selectAns(this.value)">
+                    </button>
+                </center>
             </div>
         </div>
     </div>
-    <div class="columns center " style="margin-top:2%">
-        <div class="column is-7 fontStyle question center">
-            <center>
-                <img id="imgGame" class="deplay-none" src="./resource/04.PNG" alt="Smiley face" height="360"
-                    width="650"><br><br><br>
-            <lable id="proposition" class="font is-3"> </lable>
+
+    <!---ENDGAME-->
+    <div id="endGame" class="deplay-none">
+        <div class="columns">
+            <div class="column">
+                <center>
+                    <img src="./resource/game-over.png">
+                </center>
+            </div>
+        </div>
+        <br>
+        <center>
+            <label id="scoreEndGame" class="font is-3"> </label>
         </center>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="columns">
+            <div class="column">
+                <center>
+                    <button id="choice4" class="button is-2 is-round is-orange" onclick="playQuestion()">
+                        เล่นอีก</button>
+                    <button id="choice4" class="button is-2 is-round is-orange" onclick="">
+                        กลับหน้าหลัก</button>
+                </center>
+            </div>
         </div>
     </div>
-    <div class="columns fontStyle" style="margin-top:3%">
-        <div class="column is-4">
-            <center>
-                <button id="choice1" class="button is-round is-orange" value="choice1" onclick="selectAns(this.value)">
-                </button><br><br><br><br><br><br>
-                <button id="choice2" class="button is-round is-orange" value="choice2" onclick="selectAns(this.value)">
-                </button>
-            </center>
+
+    <!--sorceGame-->
+    <div id="scoreGame" class="deplay-none">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="columns">
+            <div class="column">
+                <center>
+                    <img src="./resource/award.png" width=200px>
+                    <label class="fontStyle font is-4"> You Win</label>
+                </center>
+            </div>
         </div>
-        <div class="column is-4">
-            <center>
-                <button id="choice3" class="button is-round is-orange" value="choice3" onclick="selectAns(this.value)">
-                </button><br><br><br><br><br><br>
-                <button id="choice4" class="button is-round is-orange" value="choice4" onclick="selectAns(this.value)">
-                </button>
-            </center>
+        <br>
+        <center>
+            <label id="scoreScoreGame" class="font is-3"> </label>
+        </center>
+        <br>
+        <div class="columns">
+            <div class="column">
+                <center>
+                    <button id="choice4" class="button is-2 is-round is-orange" onclick="playQuestion()">
+                        เล่นอีก</button>
+                    <button id="choice4" class="button is-2 is-round is-orange" onclick="">
+                        กลับหน้าหลัก</button>
+                </center>
+            </div>
         </div>
     </div>
+
 </body>
-<script src="./resource/js/controQuestion.js"></script>
+<script src="./resource/js/controQuestion.js">
+</script>
 
 </html>
