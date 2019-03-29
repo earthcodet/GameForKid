@@ -100,6 +100,7 @@ function nextQuestion(nowQuestion) {
         document.getElementById("choice3").innerHTML = question[numQuestion[nowQuestion + 1]].choice.choice3
         document.getElementById("choice4").innerHTML = question[numQuestion[nowQuestion + 1]].choice.choice4
         plus()
+        nextLevel(nowQuestion+2)
     } else {
         scoreBoard()
     }
@@ -164,6 +165,9 @@ function start() {
     document.getElementById("choice3").innerHTML = question[numQuestion[nowQuestion]].choice.choice3
     document.getElementById("choice4").innerHTML = question[numQuestion[nowQuestion]].choice.choice4
     startTime()
+}
+function nextLevel(value) {
+    document.getElementById("levelGame").innerHTML = "ด่านที่ "+value + " / 10"
 }
 start()
 console.log(numQuestion)
