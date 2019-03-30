@@ -6,12 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Question</title>
-    <link href="./resource/css/questionStyle.css" type="text/css" rel="stylesheet">
+    <link href="./resource/css/gameStyle.css" type="text/css" rel="stylesheet">
 
 </head>
 
-<body>
-
+<body class="questionGame">
     <!---mainGame-->
     <div id="mainGame">
         <div class="columns">
@@ -20,7 +19,7 @@
                     <div class="column is-1">
                         <img src="./resource/clock.png" alt="Smiley face" height="42" width="42">
                     </div>
-                    <div class="column is-3 box borderBox">
+                    <div class="column is-3 box borderBox size-1">
                         <label id="timeGame" class="font is-2"> 05:00 </label>
                     </div>
                 </div>
@@ -28,7 +27,7 @@
                     <div class="column is-1">
                         <img src="./resource/star.png" alt="Smiley face" height="42" width="42">
                     </div>
-                    <div class="column is-3 box borderBox">
+                    <div class="column is-3 box borderBox size-1">
                         <label id="GameScore" class="font is-2"> 0 </label>
                     </div>
                 </div>
@@ -41,11 +40,16 @@
             </div>
             <div class="column is-1" style="margin-left: 11%">
                 <div class="columns">
-                    <div class="column is-2 box borderBox">
+                    <div class="column is-2 box borderBox size-1">
                         <img src="./resource/heart.png" alt="Smiley face" height="42" width="42">
                     </div>
-                    <div class="column is-2 box borderBox">
+                    <div class="column is-2 box borderBox size-1">
                         <label id="GameHeart" class="font is-2"> 3 </label>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div>
+                        <label id="levelGame" class="font is-2"> ด่านที่ 1 / 10 </label>
                     </div>
                 </div>
             </div>
