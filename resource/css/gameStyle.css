@@ -1,11 +1,4 @@
-
-body{
-    background-image: url("../QuestionBackground.jpg");
-    background-size: 130%;
-    background-repeat: no-repeat;
-    margin:auto;
-    padding:0;
-}
+/*---font---*/
 @font-face {
     font-family: 'cs_chatthairegular';
     src: url('cschatthai-webfont.woff2') format('woff2'),
@@ -14,6 +7,32 @@ body{
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'printable4ubold';
+    src: url('printable4u_bold_ver_1.00-webfont.woff2') format('woff2'),
+         url('printable4u_bold_ver_1.00-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*--body--*/
+body.questionGame{
+    background-image: url("../QuestionBackground.jpg");
+    background-size: 130%;
+    background-repeat: no-repeat;
+    margin:auto;
+    padding:0;
+}
+
+body.mainGame{
+    background-image: url("../main-bg.png");
+    /*background-color:#1a5b45;*/
+    background-size: 130%;
+    background-repeat: no-repeat;
+    margin:auto;
+    padding:0;
+}
+/*--flexBox--*/
 .columns {
     display: flex;
     align-items: center;
@@ -62,6 +81,11 @@ body{
     flex: none;
     width: 100%;
 }
+.column.is-9 {
+    flex: none;
+    width: 33%;
+}
+/*--font size--*/
 .font.is-1{
     color : white;
     font-size: 30px;
@@ -82,10 +106,39 @@ body{
     color : white;
     font-size: 1500px;
 }
+.font.is-6{
+    color : greenyellow;
+    font-size: 260px;
+}
+.font.is-7{
+    color : white;
+    font-size: 100px;
+}
+.font.is-8{
+    color : greenyellow;
+    font-size: 100px;
+}
 .borderBox{
     border-style: solid;
     border-color:white;
+   
+}
+.borderBox.size-1{
     border-width:1px;
+}
+.borderBox.size-3{
+    border-width:3px;
+}
+/*--custom--*/
+.fontStyle{
+    font-family: 'cs_chatthairegular', sans-serif;
+}
+.fontStyleMain{
+    font-family: 'printable4ubold', sans-serif;
+}
+.is-orange {
+    background-color: #ef8d22 !important;
+    color: white !important;
 }
 .box{
     height: 40px;
@@ -113,6 +166,9 @@ body{
     height: 150px;
     width: 320px;
 }
+.action{
+    cursor: pointer;
+}
 .button.is-1{
     height: 150px;
     width: 320px;
@@ -124,17 +180,17 @@ body{
 .button.is-round {
     border-radius: 10px;
 }
-.fontStyle{
-    font-family: 'cs_chatthairegular', sans-serif;
-    
-}
 div.center{
     align-items: center;
-}
-.is-orange {
-    background-color: #ef8d22 !important;
-    color: white !important;
 }
 .deplay-none{
    display:none
 }
+
+blink {
+    animation: blinker 0.6s linear infinite;
+    color: white;
+   }
+  @keyframes blinker {  
+    50% { opacity: 0; }
+   }
