@@ -4,3 +4,6 @@ function selectGame() {
 function playQuestionGame() {
     window.location.href = './Question.html';
 }
+function playMathGame(){
+    window.location.href = './MathGame.html';
+}

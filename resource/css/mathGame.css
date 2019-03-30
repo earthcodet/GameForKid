@@ -1,0 +1,226 @@
+/*---font---*/
+@font-face {
+    font-family: 'cs_chatthairegular';
+    src: url('cschatthai-webfont.woff2') format('woff2'),
+         url('cschatthai-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'printable4ubold';
+    src: url('printable4u_bold_ver_1.00-webfont.woff2') format('woff2'),
+         url('printable4u_bold_ver_1.00-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*--body--*/
+body.mathGame{
+    background-image: url("../math-bg.jpg");
+    background-size: 130%;
+    background-repeat: no-repeat;
+    margin:auto;
+    padding:0;
+}
+ 
+
+body.mainGame{
+    background-image: url("../main-bg.png");
+    /*background-color:#1a5b45;*/
+    background-size: 130%;
+    background-repeat: no-repeat;
+    margin:auto;
+    padding:0;
+}
+/*--flexBox--*/
+.columns {
+    display: flex;
+    align-items: center;
+}
+
+.column {
+    width: 100%;
+}
+
+.column.is-1 {
+    flex: none;
+    width: 12.5%;
+}
+
+.column.is-2 {
+    flex: none;
+    width: 25%;
+}
+
+.column.is-3 {
+    flex: none;
+    width: 37.5%;
+}
+
+.column.is-4 {
+    flex: none;
+    width: 50%;
+}
+
+.column.is-5 {
+    flex: none;
+    width: 62.5%;
+}
+
+.column.is-6 {
+    flex: none;
+    width: 75%;
+}
+
+.column.is-7 {
+    flex: none;
+    width: 87.5%;
+}
+
+.column.is-8 {
+    flex: none;
+    width: 100%;
+}
+.column.is-9 {
+    flex: none;
+    width: 33%;
+}
+.column.is-10{
+    width: 100%;
+    margin-top: 7%;
+}
+/*--font size--*/
+.font.is-1{
+    color : white;
+    font-size: 30px;
+}
+.font.is-2{
+    color : white;
+    font-size: 35px;
+}
+.font.is-3{
+    color : rgb(36, 6, 48);
+    font-size: 70px;
+}
+.font.is-4{
+    color : white;
+    font-size: 70px;
+}
+.font.is-5{
+    color : white;
+    font-size: 1500px;
+}
+.font.is-6{
+    color : greenyellow;
+    font-size: 260px;
+}
+.font.is-7{
+    color : white;
+    font-size: 100px;
+}
+.font.is-8{
+    color : greenyellow;
+    font-size: 100px;
+}
+
+.font.is-9{
+    color : rgb(36, 6, 48);
+   
+}
+.font.is-10{
+    color : white;
+    font-size: 80px;
+    border: 2px solid red;
+    background: rgb(170, 95, 199);
+   
+}
+
+.borderBox{
+    border-style: solid;
+    border-color:white;
+   
+}
+.borderBox.size-1{
+    border-width:1px;
+}
+.borderBox.size-3{
+    border-width:3px;
+}
+/*--custom--*/
+.fontStyle{
+    font-family: 'cs_chatthairegular', sans-serif;
+}
+.fontStyleMain{
+    font-family: 'printable4ubold', sans-serif;
+}
+.is-orange {
+    background-color: #ef8d22 !important;
+    color: white !important;
+}
+.is-red {
+    background-color: #c71d11 !important;
+    color: white !important;
+}
+.is-green {
+    background-color: #0aac2d !important;
+    color: white !important;
+}
+.is-yellow {
+    background-color: #ccdd33 !important;
+    color: white !important;
+}
+.box{
+    height: 40px;
+    width: 40px;
+    text-align:center;
+}
+.question{
+    padding: 50px
+}
+.button {
+    display: inline-block;
+    box-sizing: border-box;
+    margin: .3rem;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid gray;
+    background-color: white;
+    
+    font: 400 40px Arial;
+    font-family: 'cs_chatthairegular', sans-serif;
+    text-align: center;
+    text-overflow: ellipsis;
+
+    text-decoration: none;
+    height: 150px;
+    width: 320px;
+}
+.action{
+    cursor: pointer;
+}
+.button.is-1{
+    height: 150px;
+    width: 320px;
+}
+.button.is-2{
+    height: 80px;
+    width: 200px;
+}
+.button.is-round {
+    border-radius: 10px;
+}
+div.center{
+    align-items: center;
+}
+.deplay-none{
+   display:none
+}
+
+blink {
+    animation: blinker 0.6s linear infinite;
+    color: white;
+   }
+  @keyframes blinker {  
+    50% { opacity: 0; }
+   }
