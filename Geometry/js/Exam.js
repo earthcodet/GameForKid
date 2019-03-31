@@ -146,7 +146,7 @@ let checkrendom9 = 0;
 let checkAllAns = 0;
 
 function playGeometryGame() {
-    window.location.href = './play.html';
+    window.location.href = './Geometry.html';
 }
 
 function loadPopUp() {
