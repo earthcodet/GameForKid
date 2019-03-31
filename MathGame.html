@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ฝึกคิดเลข</title>
+    <link href="./resource/css/mathGame.css" type="text/css" rel="stylesheet">
+    <script src="./resource/js/mathGame.js"></script>
+
+</head>
+
+<body class="mathGame">
+    <!---mainGame-->
+    <div id="mainGame">
+        <div class="columns">
+            <div class="column is-2" style="padding:15px">
+                <div class="columns">
+                    <div class="column is-1">
+                        <img src="./resource/clock.png" alt="Smiley face" height="42" width="42">
+                    </div>
+                    <div class="column is-3 box borderBox size-1">
+                        <label id="timeGame" class="font is-2"> 05:00 </label>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column is-1">
+                        <img src="./resource/star.png" alt="Smiley face" height="42" width="42">
+                    </div>
+                    <div class="column is-3 box borderBox size-1">
+                        <label id="GameScore" class="font is-2"> 0 </label>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-4 fontStyle">
+                <center>
+                    <lable class="font is-4 is-9"> ฝึกคิดเลข</lable>
+                </center>
+                <!---style="margin-left: 23%"-->
+            </div>
+            <div class="column is-1" style="margin-left: 11%">
+                <div class="columns">
+                    <div class="column is-2 box borderBox size-1">
+                        <img src="./resource/heart.png" alt="Smiley face" height="42" width="42">
+                    </div>
+                    <div class="column is-2 box borderBox size-1">
+                        <label id="GameHeart" class="font is-2"> 3 </label>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div>
+                        <label id="levelGame" class="font is-2"> Lv.1</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="columns" style="margin-top:2%">
+            <div class="column fontStyle question center">
+                <center>
+                    <lable id="proposition" class="font is-10"> </lable>
+                </center>
+            </div>
+        </div>
+        <div class="columns fontStyle" style="margin-top:3%">
+            <div class="column is-4">
+                <center>
+                    <button id="a1" class="button is-round is-red" value="a1"
+                        onclick="selectAns(this.value)">
+                    </button><br><br><br><br><br><br>
+                    <button id="a2" class="button is-round is-orange" value="a2"
+                        onclick="selectAns(this.value)">
+                    </button>
+                </center>
+            </div>
+            <div class="column is-4">
+                <center>
+                    <button id="a3" class="button is-1 is-round is-yellow" value="a3"
+                        onclick="selectAns(this.value)">
+                    </button><br><br><br><br><br><br>
+                    <button id="a4" class="button is-1 is-round is-green" value="a4"
+                        onclick="selectAns(this.value)">
+                    </button>
+                </center>
+            </div>
+        </div>
+    </div>
+
+    <div id="endGame" class="deplay-none">
+        <div class="columns">
+            <div class="column is-10">
+                <center>
+                    <img src="./resource/math-over.jpg">
+                </center>
+            </div>
+        </div>
+        <br>
+        <center>
+            <label id="scoreEndGame" class="font is-3 "> </label>
+        </center>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="columns">
+            <div class="column">
+                <center>
+                    <button id="choice4" class="button is-2 is-round is-green" onclick="playMathGame()">
+                        เล่นอีก</button>
+                    <button id="choice4" class="button is-2 is-round is-orange" onclick="goMainGame()">
+                        กลับหน้าหลัก</button>
+                </center>
+            </div>
+        </div>
+    </div>
+
+    <div id="winGame" class="deplay-none">
+        <div class="columns">
+            <div class="column is-10">
+                <center>
+                    <img src="./resource/math-win.png">
+                </center>
+            </div>
+        </div>
+        <br>
+        <center>
+            <label id="scoreWinGame" class="font is-3 "> </label>
+        </center>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="columns">
+            <div class="column">
+                <center>
+                    <button id="choice4" class="button is-2 is-round is-green" onclick="playMathGame()">
+                        เล่นอีก</button>
+                    <button id="choice4" class="button is-2 is-round is-orange" onclick="goMainGame()">
+                        กลับหน้าหลัก</button>
+                </center>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</script>
+
+</html>
