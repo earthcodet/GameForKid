@@ -43,7 +43,7 @@ function playQuestion() {
     window.location.href = './Question.html';
 }
 function goBabyGod(){
-    window.location.href = './maingame.html';
+    window.location.href = './selectGame.html';
 }
 function scoreBoard(){
     mainGame("close")

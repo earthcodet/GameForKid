@@ -94,7 +94,7 @@ function playMathGame() {
     window.location.href = './MathGame.html';
 }
 function goMainGame() {
-    window.location.href = './mainGame.html';
+    window.location.href = './selectGame.html';
 }
 function endGame() {
     endQuestion()
